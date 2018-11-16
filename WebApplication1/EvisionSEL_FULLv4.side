@@ -1,0 +1,448 @@
+{
+  "id": "5cac007b-a95f-4865-b60f-6c7067b1b678",
+  "version": "1.1",
+  "name": "EvisionSEL_FULLv4",
+  "url": "https://gates.sodexonet.com",
+  "tests": [{
+    "id": "75c150bd-4496-4311-8916-f1350f6c9a2e",
+    "name": "EvisionFull_vT7",
+    "commands": [{
+      "id": "997ad300-218d-4d5d-a951-c8fcfcefe178",
+      "comment": "",
+      "command": "open",
+      "target": "https://bidashboards.mysodexo.com/Evision/Default.aspx",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "931ab449-5b29-4ecb-832d-e565b23fbc1b",
+      "comment": "",
+      "command": "click",
+      "target": "id=userNameInput",
+      "targets": [
+        ["id=userNameInput", "id"],
+        ["name=UserName", "name"],
+        ["css=#userNameInput", "css"],
+        ["css=#userNameInput", "css:finder"],
+        ["xpath=//input[@id='userNameInput']", "xpath:attributes"],
+        ["xpath=//div[@id='userNameArea']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "edccea8e-de8a-402f-ab8e-f07cc164e70e",
+      "comment": "",
+      "command": "type",
+      "target": "id=userNameInput",
+      "targets": [
+        ["id=userNameInput", "id"],
+        ["name=UserName", "name"],
+        ["css=#userNameInput", "css"],
+        ["css=#userNameInput", "css:finder"],
+        ["xpath=//input[@id='userNameInput']", "xpath:attributes"],
+        ["xpath=//div[@id='userNameArea']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Brio1"
+    }, {
+      "id": "3d50a6b3-9b7b-4f64-8624-bc3be80abf14",
+      "comment": "",
+      "command": "click",
+      "target": "id=passwordInput",
+      "targets": [
+        ["id=passwordInput", "id"],
+        ["name=Password", "name"],
+        ["css=#passwordInput", "css"],
+        ["css=#passwordInput", "css:finder"],
+        ["xpath=//input[@id='passwordInput']", "xpath:attributes"],
+        ["xpath=//div[@id='passwordArea']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4501e2ee-ae36-4d75-95ee-e93da85e7771",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwordInput",
+      "targets": [
+        ["id=passwordInput", "id"],
+        ["name=Password", "name"],
+        ["css=#passwordInput", "css"],
+        ["css=#passwordInput", "css:finder"],
+        ["xpath=//input[@id='passwordInput']", "xpath:attributes"],
+        ["xpath=//div[@id='passwordArea']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "H3artbLe3d!"
+    }, {
+      "id": "209137be-8caf-4ad3-ba91-eac97ea066eb",
+      "comment": "",
+      "command": "click",
+      "target": "id=submitButton",
+      "targets": [
+        ["id=submitButton", "id"],
+        ["css=#submitButton", "css"],
+        ["css=#submitButton", "css:finder"],
+        ["xpath=//span[@id='submitButton']", "xpath:attributes"],
+        ["xpath=//div[@id='submissionArea']/span", "xpath:idRelative"],
+        ["xpath=//div[4]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "63ed1a96-e185-41d1-b4e8-8827c6a008c1",
+      "comment": "Open Financial Dashboard",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bac068a0-602d-403a-ac83-dbf1169d7a74",
+      "comment": "",
+      "command": "click",
+      "target": "css=.arcComponentContainer:nth-child(39) span",
+      "targets": [
+        ["css=.arcComponentContainer:nth-child(39) span", "css:finder"],
+        ["xpath=//div[@id='Cont0_Login']/div[39]/div/span", "xpath:idRelative"],
+        ["xpath=//div[39]/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "017f79b8-b164-4bec-97a2-c3d19081ab6d",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a626a08a-59ff-4c32-b352-b6a212904bb4",
+      "comment": "Open Financial Dashboard #2",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "021c5a01-190e-4386-b04e-a72b8d3b2f08",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Cont0_Evision_5FKey_5FResult_5FIndicators > div.arcComponentContainer > button.arcButton > span.arcButtonContent",
+      "targets": [
+        ["css=#Cont0_Evision_5FKey_5FResult_5FIndicators > div.arcComponentContainer > button.arcButton > span.arcButtonContent", "css"],
+        ["css=.arcComponentContainer:nth-child(11) .arcButtonContent", "css:finder"],
+        ["xpath=//div[@id='Cont0_Evision_5FKey_5FResult_5FIndicators']/div[11]/button/span", "xpath:idRelative"],
+        ["xpath=//div[11]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff1a193a-2049-41bf-a230-d9c8c5efcb55",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#Cont0_Evision_5FKey_5FResult_5FIndicators > div.arcComponentContainer > button.arcButton > span.arcButtonContent",
+      "targets": [
+        ["css=#Cont0_Evision_5FKey_5FResult_5FIndicators > div.arcComponentContainer > button.arcButton > span.arcButtonContent", "css"],
+        ["css=.arcComponentContainer:nth-child(11) .arcButtonContent", "css:finder"],
+        ["xpath=//div[@id='Cont0_Evision_5FKey_5FResult_5FIndicators']/div[11]/button/span", "xpath:idRelative"],
+        ["xpath=//div[11]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "53dbd4ea-903a-435e-a82c-9e5299e6285c",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=#Cont0_Evision_5FKey_5FResult_5FIndicators > div.arcComponentContainer > button.arcButton > span.arcButtonContent",
+      "targets": [
+        ["css=#Cont0_Evision_5FKey_5FResult_5FIndicators > div.arcComponentContainer > button.arcButton > span.arcButtonContent", "css"],
+        ["css=.arcComponentContainer:nth-child(11) .arcButtonContent", "css:finder"],
+        ["xpath=//div[@id='Cont0_Evision_5FKey_5FResult_5FIndicators']/div[11]/button/span", "xpath:idRelative"],
+        ["xpath=//div[11]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6577b930-5d83-4130-b26b-24fe2c3d29ce",
+      "comment": "",
+      "command": "click",
+      "target": "css=span.arcButtonContent",
+      "targets": [
+        ["css=span.arcButtonContent", "css"],
+        ["css=.arcComponentContainer:nth-child(3) .arcButtonContent", "css:finder"],
+        ["xpath=//div[@id='Cont0_Ref_5FEss_5FHIERARCHY']/div[3]/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec031721-0c41-4818-8883-7c2c180b30c4",
+      "comment": "Financial Dashboard - NKM data - P&L Expanded View",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1ad89069-52e3-452e-a6cf-a02d37dc1345",
+      "comment": "",
+      "command": "click",
+      "target": "css=.arcComponentContainer:nth-child(14) img",
+      "targets": [
+        ["css=.arcComponentContainer:nth-child(14) img", "css:finder"],
+        ["xpath=//div[@id='Cont0_Evision_5FKey_5FResult_5FIndicators']/div[14]/button/img", "xpath:idRelative"],
+        ["xpath=//div[14]/button/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1661be4e-d1d5-4be6-bdbd-04e60291cce2",
+      "comment": "Financial Dashboard - NKM data - P&L Expanded View #2",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ae266ef8-c405-4f28-90c7-25c19ea89550",
+      "comment": "",
+      "command": "click",
+      "target": "css=.arcComponentContainer:nth-child(338) img",
+      "targets": [
+        ["css=.arcComponentContainer:nth-child(338) img", "css:finder"],
+        ["xpath=//div[@id='Cont0_Evision_5FKey_5FResult_5FIndicators']/div[338]/button/img", "xpath:idRelative"],
+        ["xpath=//div[338]/button/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "91d08661-2069-4bf8-a2b9-6b880c41f9ad",
+      "comment": "Financial Dashboard - NKM data - AR Pleat",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "97981b71-ab7a-411c-9f6a-a0006f958974",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Cont0_Evision_5FKey_5FResult_5FIndicators > .arcComponentContainer:nth-child(40) span",
+      "targets": [
+        ["css=#Cont0_Evision_5FKey_5FResult_5FIndicators > .arcComponentContainer:nth-child(40) span", "css:finder"],
+        ["xpath=//div[@id='Cont0_Evision_5FKey_5FResult_5FIndicators']/div[40]/div/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div[40]/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "706bdf20-2db3-479c-90ed-9f0267b96689",
+      "comment": "Financial Dashboard - NKM data - AR Pleat - Daily AR Analytics #2",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0dbe160c-cd4b-4cea-b6af-42614ee18396",
+      "comment": "",
+      "command": "click",
+      "target": "css=.arcComponentContainer:nth-child(340) span",
+      "targets": [
+        ["css=.arcComponentContainer:nth-child(340) span", "css:finder"],
+        ["xpath=//div[@id='Cont0_Evision_5FKey_5FResult_5FIndicators']/div[340]/div/span", "xpath:idRelative"],
+        ["xpath=//div[340]/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "073e4a95-8b20-4ce6-b043-8b4afc340d2e",
+      "comment": "Financial Dashboard - NKM data - AR Pleat - Daily AR Analytics #3",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1c6e574a-018d-4141-8bf4-f1528944db89",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Cont0_Evision_5FKey_5FResult_5FIndicators > .arcComponentContainer:nth-child(13) span",
+      "targets": [
+        ["css=#Cont0_Evision_5FKey_5FResult_5FIndicators > .arcComponentContainer:nth-child(13) span", "css:finder"],
+        ["xpath=//div[@id='Cont0_Evision_5FKey_5FResult_5FIndicators']/div[13]/div/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div[13]/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a56c928-a297-439a-b294-c245fad56e89",
+      "comment": "Financial Dashboard - NKM data - AP Pleat",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "17796c98-eb7d-4b36-aab9-fbd85475e661",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Cont0_Evision_5FKey_5FResult_5FIndicators > .arcComponentContainer:nth-child(41) span",
+      "targets": [
+        ["css=#Cont0_Evision_5FKey_5FResult_5FIndicators > .arcComponentContainer:nth-child(41) span", "css:finder"],
+        ["xpath=//div[@id='Cont0_Evision_5FKey_5FResult_5FIndicators']/div[41]/div/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div[41]/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6458f04-9693-4780-a551-332a19e41976",
+      "comment": "Financial Dashboard - NKM data - AP Pleat - Daily AP Analytics",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "494a05d3-1bca-4d5f-aa5b-e714faf3b4e8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.arcComponentContainer:nth-child(340) span",
+      "targets": [
+        ["css=.arcComponentContainer:nth-child(340) span", "css:finder"],
+        ["xpath=//div[@id='Cont0_Evision_5FKey_5FResult_5FIndicators']/div[340]/div/span", "xpath:idRelative"],
+        ["xpath=//div[340]/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "29a64c61-85dd-4f20-89b4-237cb3bb6591",
+      "comment": "Financial Dashboard - NKM data ",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2dcd32e3-6a90-4d8a-9c51-964b5faf886b",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Cont0_Evision_5FKey_5FResult_5FIndicators > .arcComponentContainer:nth-child(13) span",
+      "targets": [
+        ["css=#Cont0_Evision_5FKey_5FResult_5FIndicators > .arcComponentContainer:nth-child(13) span", "css:finder"],
+        ["xpath=//div[@id='Cont0_Evision_5FKey_5FResult_5FIndicators']/div[13]/div/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div[13]/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9bd6f39b-bd5f-40e2-b20f-57965f684d6a",
+      "comment": "Financial Dashboard - NKM data - Labor pleat ",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "57f11802-7ff3-489b-bb7a-87af115c55d4",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Cont0_Evision_5FKey_5FResult_5FIndicators > .arcComponentContainer:nth-child(42) span",
+      "targets": [
+        ["css=#Cont0_Evision_5FKey_5FResult_5FIndicators > .arcComponentContainer:nth-child(42) span", "css:finder"],
+        ["xpath=//div[@id='Cont0_Evision_5FKey_5FResult_5FIndicators']/div[42]/div/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div[42]/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "28b4f55d-676b-4a9b-902c-ac8d820915ae",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ec51cc60-73aa-4fde-b537-21e765c8779d",
+      "comment": "Financial Dashboard - NKM data - Inventory pleat ",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "efd629d8-0197-448d-ae83-955687bb0a1e",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Cont0_Evision_5FKey_5FResult_5FIndicators > .arcComponentContainer:nth-child(43) span",
+      "targets": [
+        ["css=#Cont0_Evision_5FKey_5FResult_5FIndicators > .arcComponentContainer:nth-child(43) span", "css:finder"],
+        ["xpath=//div[@id='Cont0_Evision_5FKey_5FResult_5FIndicators']/div[43]/div/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div[43]/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bec7998b-f9b6-4989-bb6e-2280a2d30f9f",
+      "comment": "Financial Dashboard - NKM data",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "132ae7eb-35e3-47d6-879a-9ca6ae2e166b",
+      "comment": "",
+      "command": "click",
+      "target": "id=arcRadioButtonIdentifier4-1",
+      "targets": [
+        ["id=arcRadioButtonIdentifier4-1", "id"],
+        ["css=#arcRadioButtonIdentifier4-1", "css"],
+        ["css=#arcRadioButtonIdentifier4-1", "css:finder"],
+        ["xpath=//input[@id='arcRadioButtonIdentifier4-1']", "xpath:attributes"],
+        ["xpath=//div[@id='Cont0_Evision_5FKey_5FResult_5FIndicators']/div[50]/div/table/tbody/tr/td[2]/span/input", "xpath:idRelative"],
+        ["xpath=//td[2]/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "24eb0eaa-0cce-4257-bfce-2b2453191692",
+      "comment": "",
+      "command": "click",
+      "target": "css=.selectedObject > .arcHierPopup",
+      "targets": [
+        ["css=.selectedObject > .arcHierPopup", "css:finder"],
+        ["xpath=//div[@id='Cont737_Evision_5FKey_5FResult_5FIndicators']/div/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div[85]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed278446-7c7e-4705-9bd1-4069a2ed8695",
+      "comment": "",
+      "command": "click",
+      "target": "css=.selectedObject .arcMenuItem:nth-child(3) > .arcMenuItemText",
+      "targets": [
+        ["css=.selectedObject .arcMenuItem:nth-child(3) > .arcMenuItemText", "css:finder"],
+        ["xpath=//div[@id='Cont737_Evision_5FKey_5FResult_5FIndicators']/div/div[2]/div/ul/li[3]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[85]/div/div[2]/div/ul/li[3]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2487d9b0-38c4-475c-b2b4-bd59431d1f96",
+      "comment": "Financial Dashboard - NKM data - Safety pleat ",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c2bad424-b3ee-41a6-9d6b-be54374b9a18",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Cont0_Evision_5FKey_5FResult_5FIndicators > .arcComponentContainer:nth-child(45) span",
+      "targets": [
+        ["css=#Cont0_Evision_5FKey_5FResult_5FIndicators > .arcComponentContainer:nth-child(45) span", "css:finder"],
+        ["xpath=//div[@id='Cont0_Evision_5FKey_5FResult_5FIndicators']/div[45]/div/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div[45]/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8637b64-09cc-4381-a921-73590df1b18d",
+      "comment": "Financial Dashboard - NKM data - Product Compliance pleat ",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1e7fff93-4e88-4dec-bd88-64e0f72f6f94",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Cont0_Evision_5FKey_5FResult_5FIndicators > .arcComponentContainer:nth-child(44) span",
+      "targets": [
+        ["css=#Cont0_Evision_5FKey_5FResult_5FIndicators > .arcComponentContainer:nth-child(44) span", "css:finder"],
+        ["xpath=//div[@id='Cont0_Evision_5FKey_5FResult_5FIndicators']/div[44]/div/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div[44]/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "80bc15b2-65d9-49a6-a359-2049dc2f051b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["75c150bd-4496-4311-8916-f1350f6c9a2e"]
+  }],
+  "urls": ["https://gates.sodexonet.com/"],
+  "plugins": []
+}
