@@ -107,7 +107,7 @@ namespace WebApplication1
 
         public string ConvertedPath;
 
-        static void CreateHTMLScript(Script Converted_Script)
+        public void CreateHTMLScript(Script Converted_Script)
         {
             StringWriter stringwriter = new StringWriter();
             HtmlTextWriter writer = new HtmlTextWriter(stringwriter);
@@ -253,10 +253,14 @@ namespace WebApplication1
 
             }
             Console.WriteLine(stringwriter.ToString());
-
-            System.IO.File.WriteAllText(AppDomain.CurrentDomain.BaseDirectory + @"\" + filename.Replace(".side",".html"), stringwriter.ToString());
-
+            string exportPath = AppDomain.CurrentDomain.BaseDirectory + @"\" + filename.Replace(".side", ".html");
+            System.IO.File.WriteAllText(exportPath, stringwriter.ToString());
+            StatusLabel.Text = "Convert status: Scenario Converted!";
+            DownLoad(exportPath);
+           
         }
+
+        
 
         protected void Button1_Click(object sender, EventArgs e)
         {
@@ -264,7 +268,7 @@ namespace WebApplication1
             Script Converted_Script = new Script();
             Converted_Script = ExtractJSON();
             CreateHTMLScript(Converted_Script);
-            StatusLabel.Text = "Convert status: Scenario Converted!";
+           
 
         }
 
