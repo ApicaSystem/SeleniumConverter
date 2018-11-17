@@ -25,18 +25,38 @@ namespace WebApplication1
                 try
                 {
                     filename = System.IO.Path.GetFileName(FileUploadControl.FileName);
-                    FileUploadControl.SaveAs(Server.MapPath("~/") + filename);
-                    StatusLabel.Text = "Upload status: File uploaded!";
-                    filePath = Server.MapPath("~/") + filename;
+                    if (CheckFileType(filename) == false)
+                    {
+                        StatusLabel.Text = "Upload status: File is not .side format!";
+
+                    }
+                    else
+                    {
+                        FileUploadControl.SaveAs(Server.MapPath("~/") + filename);
+                        StatusLabel.Text = "Upload status: File uploaded!";
+                        filePath = Server.MapPath("~/") + filename;
+                    }
                 }
                 catch (Exception ex)
                 {
                     StatusLabel.Text = "Upload status: The file could not be uploaded. The following error occured: " + ex.Message;
                 }
             }
-            
+
         }
 
+
+        bool CheckFileType(string fileName)
+        {
+            string ext = Path.GetExtension(fileName);
+            switch (ext.ToLower())
+            {
+                case ".side":
+                    return true;
+                default:
+                    return false;
+            }
+        }
         public class ScriptInfo
         {
             public string name { get; set; }
@@ -257,10 +277,10 @@ namespace WebApplication1
             System.IO.File.WriteAllText(exportPath, stringwriter.ToString());
             StatusLabel.Text = "Convert status: Scenario Converted!";
             DownLoad(exportPath);
-           
+
         }
 
-        
+
 
         protected void Button1_Click(object sender, EventArgs e)
         {
@@ -268,7 +288,7 @@ namespace WebApplication1
             Script Converted_Script = new Script();
             Converted_Script = ExtractJSON();
             CreateHTMLScript(Converted_Script);
-           
+
 
         }
 

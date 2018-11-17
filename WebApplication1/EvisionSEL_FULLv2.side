@@ -1,0 +1,512 @@
+{
+  "id": "3e9601ff-46ce-45d5-8d06-2157132dd5df",
+  "version": "1.1",
+  "name": "EvisionSEL_FULLv2",
+  "url": "https://gates.sodexonet.com",
+  "tests": [{
+    "id": "7724946f-9f08-4986-b817-d25be7f131b7",
+    "name": "EvisionFULL_vt1",
+    "commands": [{
+      "id": "38ba1f61-b75d-4811-8327-0c4210cc3981",
+      "comment": "",
+      "command": "open",
+      "target": "https://bidashboards.mysodexo.com/Evision/Default.aspx",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "063bb79b-ce2d-4422-adeb-50e5c59b7f11",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css"],
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c01574d-2d52-46c4-95bd-dfe38dab2057",
+      "comment": "",
+      "command": "type",
+      "target": "id=userNameInput",
+      "targets": [
+        ["id=userNameInput", "id"],
+        ["name=UserName", "name"],
+        ["css=#userNameInput", "css"],
+        ["css=#userNameInput", "css:finder"],
+        ["xpath=//input[@id='userNameInput']", "xpath:attributes"],
+        ["xpath=//div[@id='userNameArea']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Brio1"
+    }, {
+      "id": "d6186ece-9d20-4100-8802-78c8dd0976e5",
+      "comment": "",
+      "command": "click",
+      "target": "id=passwordInput",
+      "targets": [
+        ["id=passwordInput", "id"],
+        ["name=Password", "name"],
+        ["css=#passwordInput", "css"],
+        ["css=#passwordInput", "css:finder"],
+        ["xpath=//input[@id='passwordInput']", "xpath:attributes"],
+        ["xpath=//div[@id='passwordArea']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "28a4e754-8ece-4e42-97d8-e71a13ff34df",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwordInput",
+      "targets": [
+        ["id=passwordInput", "id"],
+        ["name=Password", "name"],
+        ["css=#passwordInput", "css"],
+        ["css=#passwordInput", "css:finder"],
+        ["xpath=//input[@id='passwordInput']", "xpath:attributes"],
+        ["xpath=//div[@id='passwordArea']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "H3artbLe3d!"
+    }, {
+      "id": "8f663c15-175d-4f36-ae83-f725a6dd306d",
+      "comment": "Login",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ab38e625-a9d3-4fee-b283-e676a6345907",
+      "comment": "",
+      "command": "click",
+      "target": "id=submitButton",
+      "targets": [
+        ["id=submitButton", "id"],
+        ["css=#submitButton", "css"],
+        ["css=#submitButton", "css:finder"],
+        ["xpath=//span[@id='submitButton']", "xpath:attributes"],
+        ["xpath=//div[@id='submissionArea']/span", "xpath:idRelative"],
+        ["xpath=//div[4]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b80074fc-23fe-4eb6-b4b2-57ee2e2b79ec",
+      "comment": "Open Financial Dashboard",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a776a42a-d456-48b4-93f7-45342047ca2f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.arcComponentContainer:nth-child(39) span",
+      "targets": [
+        ["css=.arcComponentContainer:nth-child(39) span", "css:finder"],
+        ["xpath=//div[@id='Cont0_Login']/div[39]/div/span", "xpath:idRelative"],
+        ["xpath=//div[39]/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "24e8872f-fc18-4111-af90-d7163999f73b",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2e06e767-db19-46d6-85a9-0187621ea73f",
+      "comment": "Open Financial Dashboard #2",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "05a03aa0-2bda-45af-8d81-f0e797dfa77b",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Cont0_Evision_5FKey_5FResult_5FIndicators > div.arcComponentContainer > button.arcButton > span.arcButtonContent",
+      "targets": [
+        ["css=#Cont0_Evision_5FKey_5FResult_5FIndicators > div.arcComponentContainer > button.arcButton > span.arcButtonContent", "css"],
+        ["css=.arcComponentContainer:nth-child(11) .arcButtonContent", "css:finder"],
+        ["xpath=//div[@id='Cont0_Evision_5FKey_5FResult_5FIndicators']/div[11]/button/span", "xpath:idRelative"],
+        ["xpath=//div[11]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d8de666-a0fc-46c6-8259-909eb1a15a5c",
+      "comment": "",
+      "command": "click",
+      "target": "css=div.arcHierPopup.arcHierPopupMultisel",
+      "targets": [
+        ["css=div.arcHierPopup.arcHierPopupMultisel", "css"],
+        ["css=.selectedObject > .arcHierPopup", "css:finder"],
+        ["xpath=//div[@id='Cont29_Ref_5FEss_5FHIERARCHY']/div/div", "xpath:idRelative"],
+        ["xpath=//div[32]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6cdceb47-e0ab-4a6e-9070-c3930e8e4ba6",
+      "comment": "",
+      "command": "click",
+      "target": "id=1_1_1_653078_7d8072c1dbc710e11ee84d54b7bd52f6",
+      "targets": [
+        ["id=1_1_1_653078_7d8072c1dbc710e11ee84d54b7bd52f6", "id"],
+        ["css=#\\31_1_1_653078_7d8072c1dbc710e11ee84d54b7bd52f6", "css:finder"],
+        ["xpath=//input[@id='1_1_1_653078_7d8072c1dbc710e11ee84d54b7bd52f6']", "xpath:attributes"],
+        ["xpath=//li[@id='1_1_1_653078_7d8072c1dbc710e11ee84d54b7bd52f6_LI']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e3c86ab-e36e-4809-9962-479b12aaa273",
+      "comment": "",
+      "command": "click",
+      "target": "id=2_2_1_653079_7d8072c1dbc710e11ee84d54b7bd52f6",
+      "targets": [
+        ["id=2_2_1_653079_7d8072c1dbc710e11ee84d54b7bd52f6", "id"],
+        ["css=#\\32_2_1_653079_7d8072c1dbc710e11ee84d54b7bd52f6", "css:finder"],
+        ["xpath=//input[@id='2_2_1_653079_7d8072c1dbc710e11ee84d54b7bd52f6']", "xpath:attributes"],
+        ["xpath=//li[@id='2_2_1_653079_7d8072c1dbc710e11ee84d54b7bd52f6_LI']/div/input", "xpath:idRelative"],
+        ["xpath=//ul/li/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3c0c535-0547-4597-ae96-6669e3cf76cf",
+      "comment": "",
+      "command": "click",
+      "target": "css=#\\35_3_1_685708_7d8072c1dbc710e11ee84d54b7bd52f6_LI > .arcSelectable",
+      "targets": [
+        ["css=#\\35_3_1_685708_7d8072c1dbc710e11ee84d54b7bd52f6_LI > .arcSelectable", "css:finder"],
+        ["xpath=//li[@id='5_3_1_685708_7d8072c1dbc710e11ee84d54b7bd52f6_LI']/label", "xpath:idRelative"],
+        ["xpath=//li[3]/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d948edcb-9dd0-429c-b94a-41351aad84e7",
+      "comment": "",
+      "command": "click",
+      "target": "name=ok",
+      "targets": [
+        ["name=ok", "name"],
+        ["css=input[name=\"ok\"]", "css"],
+        ["css=.selectedObject input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='ok']", "xpath:attributes"],
+        ["xpath=//div[@id='Cont29_Ref_5FEss_5FHIERARCHY']/div/div[2]/div[2]/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "50435e5b-2561-4527-be22-361e0a3647e5",
+      "comment": "",
+      "command": "click",
+      "target": "css=span.arcButtonContent",
+      "targets": [
+        ["css=span.arcButtonContent", "css"],
+        ["css=.arcComponentContainer:nth-child(3) .arcButtonContent", "css:finder"],
+        ["xpath=//div[@id='Cont0_Ref_5FEss_5FHIERARCHY']/div[3]/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a42b257c-3292-4309-bbac-1c29ba187537",
+      "comment": "Financial Dashboard - NKM data - P&L Expanded View",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "90ab181a-c197-41f9-a922-e62a41688848",
+      "comment": "",
+      "command": "click",
+      "target": "css=.arcComponentContainer:nth-child(14) img",
+      "targets": [
+        ["css=.arcComponentContainer:nth-child(14) img", "css:finder"],
+        ["xpath=//div[@id='Cont0_Evision_5FKey_5FResult_5FIndicators']/div[14]/button/img", "xpath:idRelative"],
+        ["xpath=//div[14]/button/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a07b2e68-2db1-4314-a32d-ed2750709efe",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.arcComponentContainer:nth-child(14) img",
+      "targets": [
+        ["css=.arcComponentContainer:nth-child(14) img", "css:finder"],
+        ["xpath=//div[@id='Cont0_Evision_5FKey_5FResult_5FIndicators']/div[14]/button/img", "xpath:idRelative"],
+        ["xpath=//div[14]/button/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "07ac7b76-649f-4686-9fd0-2b3e96eae986",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.arcComponentContainer:nth-child(14) img",
+      "targets": [
+        ["css=.arcComponentContainer:nth-child(14) img", "css:finder"],
+        ["xpath=//div[@id='Cont0_Evision_5FKey_5FResult_5FIndicators']/div[14]/button/img", "xpath:idRelative"],
+        ["xpath=//div[14]/button/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "191e1ebd-69d2-4d0d-a17b-e55b36e4d1b8",
+      "comment": "Financial Dashboard - NKM data - P&L Expanded View #2",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "67e32348-3ef3-4d23-9619-cd901403c0e3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.arcComponentContainer:nth-child(338) img",
+      "targets": [
+        ["css=.arcComponentContainer:nth-child(338) img", "css:finder"],
+        ["xpath=//div[@id='Cont0_Evision_5FKey_5FResult_5FIndicators']/div[338]/button/img", "xpath:idRelative"],
+        ["xpath=//div[338]/button/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ae8137f-91c4-4c76-88a9-17677857ff7f",
+      "comment": "Financial Dashboard - NKM data - AR Pleat",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7e26d50c-9808-4a79-a604-309f2fc116db",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Cont0_Evision_5FKey_5FResult_5FIndicators > .arcComponentContainer:nth-child(40) span",
+      "targets": [
+        ["css=#Cont0_Evision_5FKey_5FResult_5FIndicators > .arcComponentContainer:nth-child(40) span", "css:finder"],
+        ["xpath=//div[@id='Cont0_Evision_5FKey_5FResult_5FIndicators']/div[40]/div/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div[40]/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba03c3b0-0865-497c-8447-dc27269d3640",
+      "comment": "Financial Dashboard - NKM data - AR Pleat - Daily AR Analytics #2",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "11c3d761-362e-4307-8b97-441ea723010f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.arcComponentContainer:nth-child(340) span",
+      "targets": [
+        ["css=.arcComponentContainer:nth-child(340) span", "css:finder"],
+        ["xpath=//div[@id='Cont0_Evision_5FKey_5FResult_5FIndicators']/div[340]/div/span", "xpath:idRelative"],
+        ["xpath=//div[340]/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "72f16db9-d0fb-4658-857d-11044a9e345b",
+      "comment": "Financial Dashboard - NKM data - AR Pleat - Daily AR Analytics #3",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d238b8ee-efd0-4125-bca6-e538a9b9aee8",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Cont0_Evision_5FKey_5FResult_5FIndicators > .arcComponentContainer:nth-child(13) span",
+      "targets": [
+        ["css=#Cont0_Evision_5FKey_5FResult_5FIndicators > .arcComponentContainer:nth-child(13) span", "css:finder"],
+        ["xpath=//div[@id='Cont0_Evision_5FKey_5FResult_5FIndicators']/div[13]/div/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div[13]/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "950d2a95-ef5c-4b66-959b-7fe18000b59e",
+      "comment": "Financial Dashboard - NKM data - AP Pleat",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "20bd9b74-61c4-4bde-9d07-8ba951c20190",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Cont0_Evision_5FKey_5FResult_5FIndicators > .arcComponentContainer:nth-child(41) span",
+      "targets": [
+        ["css=#Cont0_Evision_5FKey_5FResult_5FIndicators > .arcComponentContainer:nth-child(41) span", "css:finder"],
+        ["xpath=//div[@id='Cont0_Evision_5FKey_5FResult_5FIndicators']/div[41]/div/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div[41]/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1704149b-5b9b-4a3f-9259-45368b13dd55",
+      "comment": "Financial Dashboard - NKM data - AP Pleat - Daily AP Analytics",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b5387e60-89c2-461e-a512-87f7f01c3cc5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.arcComponentContainer:nth-child(340) span",
+      "targets": [
+        ["css=.arcComponentContainer:nth-child(340) span", "css:finder"],
+        ["xpath=//div[@id='Cont0_Evision_5FKey_5FResult_5FIndicators']/div[340]/div/span", "xpath:idRelative"],
+        ["xpath=//div[340]/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "878ef957-76a4-4005-8c95-bf8984d65f6b",
+      "comment": "Financial Dashboard - NKM data ",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f683c590-1734-46bd-afaf-d48f0711c731",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Cont0_Evision_5FKey_5FResult_5FIndicators > .arcComponentContainer:nth-child(13) span",
+      "targets": [
+        ["css=#Cont0_Evision_5FKey_5FResult_5FIndicators > .arcComponentContainer:nth-child(13) span", "css:finder"],
+        ["xpath=//div[@id='Cont0_Evision_5FKey_5FResult_5FIndicators']/div[13]/div/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div[13]/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fdfd21e4-45fb-453d-81c1-476627165ef2",
+      "comment": "Financial Dashboard - NKM data - Labor pleat ",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ba1f5064-c755-4f42-afdb-50841b3fbf21",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Cont0_Evision_5FKey_5FResult_5FIndicators > .arcComponentContainer:nth-child(42) span",
+      "targets": [
+        ["css=#Cont0_Evision_5FKey_5FResult_5FIndicators > .arcComponentContainer:nth-child(42) span", "css:finder"],
+        ["xpath=//div[@id='Cont0_Evision_5FKey_5FResult_5FIndicators']/div[42]/div/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div[42]/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a821bbf0-0d63-4ff6-abfd-260f4f4cf49d",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "26b21229-a9e8-42a6-bb81-110f642cd255",
+      "comment": "Financial Dashboard - NKM data - Inventory pleat ",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "52dfd445-c180-4f4c-a52b-5454a174b5b4",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Cont0_Evision_5FKey_5FResult_5FIndicators > .arcComponentContainer:nth-child(43) span",
+      "targets": [
+        ["css=#Cont0_Evision_5FKey_5FResult_5FIndicators > .arcComponentContainer:nth-child(43) span", "css:finder"],
+        ["xpath=//div[@id='Cont0_Evision_5FKey_5FResult_5FIndicators']/div[43]/div/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div[43]/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c99a7b96-6336-410e-88b2-516c990dda27",
+      "comment": "Financial Dashboard - NKM data",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "68d81714-7b70-4861-95c9-e457f3056fe5",
+      "comment": "",
+      "command": "click",
+      "target": "id=arcRadioButtonIdentifier4-1",
+      "targets": [
+        ["id=arcRadioButtonIdentifier4-1", "id"],
+        ["css=#arcRadioButtonIdentifier4-1", "css"],
+        ["css=#arcRadioButtonIdentifier4-1", "css:finder"],
+        ["xpath=//input[@id='arcRadioButtonIdentifier4-1']", "xpath:attributes"],
+        ["xpath=//div[@id='Cont0_Evision_5FKey_5FResult_5FIndicators']/div[50]/div/table/tbody/tr/td[2]/span/input", "xpath:idRelative"],
+        ["xpath=//td[2]/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b8de609-f3b3-442d-b38c-d6870990d0b9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.selectedObject > .arcHierPopup",
+      "targets": [
+        ["css=.selectedObject > .arcHierPopup", "css:finder"],
+        ["xpath=//div[@id='Cont737_Evision_5FKey_5FResult_5FIndicators']/div/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div[85]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c0c8d5b-8de2-47a8-9ce1-df0470299ee7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.selectedObject .arcMenuItem:nth-child(3) > .arcMenuItemText",
+      "targets": [
+        ["css=.selectedObject .arcMenuItem:nth-child(3) > .arcMenuItemText", "css:finder"],
+        ["xpath=//div[@id='Cont737_Evision_5FKey_5FResult_5FIndicators']/div/div[2]/div/ul/li[3]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[85]/div/div[2]/div/ul/li[3]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0767ef29-3bd6-4e23-95ea-89b3a8efc0b4",
+      "comment": "Financial Dashboard - NKM data - Safety pleat ",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "68090312-5c15-4255-9500-e8decfd0666a",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Cont0_Evision_5FKey_5FResult_5FIndicators > .arcComponentContainer:nth-child(45) span",
+      "targets": [
+        ["css=#Cont0_Evision_5FKey_5FResult_5FIndicators > .arcComponentContainer:nth-child(45) span", "css:finder"],
+        ["xpath=//div[@id='Cont0_Evision_5FKey_5FResult_5FIndicators']/div[45]/div/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div[45]/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c79acc7a-7c39-4a53-aeef-8387ad1bc74b",
+      "comment": "Financial Dashboard - NKM data - Product Compliance pleat ",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b4a5d782-3f8e-41ef-ab38-2d79fdc186e4",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Cont0_Evision_5FKey_5FResult_5FIndicators > .arcComponentContainer:nth-child(44) span",
+      "targets": [
+        ["css=#Cont0_Evision_5FKey_5FResult_5FIndicators > .arcComponentContainer:nth-child(44) span", "css:finder"],
+        ["xpath=//div[@id='Cont0_Evision_5FKey_5FResult_5FIndicators']/div[44]/div/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div[44]/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d3431937-759b-4d0b-9da0-6d36a30015bd",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["7724946f-9f08-4986-b817-d25be7f131b7"]
+  }],
+  "urls": ["https://gates.sodexonet.com/"],
+  "plugins": []
+}
