@@ -24,6 +24,15 @@ namespace WebApplication1
             {
                 try
                 {
+
+                    int fileSize = FileUploadControl.PostedFile.ContentLength;
+                    if (fileSize > (5 * 1024))
+                    {
+
+                        StatusLabel.Text = "Filesize of image is too large. Maximum file size permitted is 1 MB";
+                        return;
+                    }
+
                     filename = System.IO.Path.GetFileName(FileUploadControl.FileName);
                     if (CheckFileType(filename) == false)
                     {
