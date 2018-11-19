@@ -70,12 +70,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="FetchGroups.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Converter.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FetchGroups.aspx.cs">
+      <DependentUpon>FetchGroups.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FetchGroups.aspx.designer.cs">
+      <DependentUpon>FetchGroups.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Converter.aspx.cs">
       <DependentUpon>Converter.aspx</DependentUpon>
