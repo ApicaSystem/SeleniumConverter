@@ -37,7 +37,7 @@ namespace WebApplication1
                     if (CheckFileType(filename) == false)
                     {
                         StatusLabel.Text = "Upload status: File is not .side format!";
-
+                        return;
                     }
                     else
                     {
