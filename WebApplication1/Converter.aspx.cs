@@ -18,6 +18,9 @@ namespace WebApplication1
         }
 
         static string filename;
+
+
+        // Web Button that allows users to choose the scenario , it does validate that the file is not large and is a .side file 
         public void UploadButton_Click(object sender, EventArgs e)
         {
             if (FileUploadControl.HasFile)
@@ -54,7 +57,7 @@ namespace WebApplication1
 
         }
 
-
+        // function that validates that the file is of .side extension 
         bool CheckFileType(string fileName)
         {
             string ext = Path.GetExtension(fileName);
@@ -66,6 +69,12 @@ namespace WebApplication1
                     return false;
             }
         }
+
+        // created classes that will be used in order to parse the .side file 
+        // The way its been structured is there is one object called Script Info that could have multiple Suites inside of them ( in our case its only one suite) and within each suite
+        // there will be a number of commads ( class defined as Test) and each command will have command , target , value , "list of targets" which is a new feature that .side introduces where 
+        // it saves all possible locators for that element in a separate object ( xpath by location , xpath by attribute , css , name etc...)
+
         public class ScriptInfo
         {
             public string name { get; set; }
@@ -86,7 +95,10 @@ namespace WebApplication1
             public string value;
             public String[][] targets;
         }
-
+        //--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        
+        // After parsing the .side file into the object above i save the info in the below structure that has the main information of the script itself 
+        // there will be an object of Script that will have the main URL , Script Title and Script Steps (command , target , value , comment)
         public class Script
         {
             public string MainURL { get; set; }
@@ -101,7 +113,11 @@ namespace WebApplication1
             public string value { get; set; }
             public string comment { get; set; }
         }
+
+        //--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
         static string filePath { set; get; }
+        
+        // function using the NewtonSoft library that will parse the JSON file (.side script) and save it in object named result which is of class Script and return that converted script
         public Script ExtractJSON()
         {
 
@@ -109,13 +125,13 @@ namespace WebApplication1
             {
 
                 Script Converted_Script = new Script();
-                // Read the stream to a string, and write the string to the console.
+                // Read the stream to a string
                 String line = sr.ReadToEnd();
                 ScriptInfo result = JsonConvert.DeserializeObject<ScriptInfo>(line);
                 Converted_Script.MainURL = result.url;
                 Converted_Script.ScriptTitle = result.name;
                 string temp = result.Tests[0].commands[3].targets.Length.ToString();
-                // Console.WriteLine((result.Tests[0].commands.Items[3]).targets[0][0]);
+                // since there is the assumption that there is only one suite / script I'm only accessing the first element [0] and then parsing the JSON File into the Converted_Script
                 for (int i = 0; i < result.Tests[0].commands.Count; i++)
                 {
                     Steps TempScript = new Steps
@@ -125,8 +141,6 @@ namespace WebApplication1
                         value = result.Tests[0].commands[i].value,
                         comment = " "
                     };
-                    if (TempScript.target.Contains("linkText"))
-                        TempScript.target = result.Tests[0].commands[3].targets[1][0];
                     Converted_Script.ScriptSteps.Add(TempScript);
                 }
                 Console.WriteLine(line);
@@ -135,7 +149,7 @@ namespace WebApplication1
         }
 
         public string ConvertedPath;
-
+        // this function will be creating the HTML File that is passed by the ExtractJSON function 
         public void CreateHTMLScript(Script Converted_Script)
         {
             StringWriter stringwriter = new StringWriter();
@@ -184,11 +198,11 @@ namespace WebApplication1
                 writer.RenderEndTag();
                 // </thead>
                 writer.RenderBeginTag(HtmlTextWriterTag.Tbody);
-                // <tbody>
+                // <tbody> 
                 string body = stringwriter.ToString();
                 for (int i = 0; i < Converted_Script.ScriptSteps.Count; i++)
-                {
-                    if (Converted_Script.ScriptSteps[i].command == "click" | Converted_Script.ScriptSteps[i].command == "select")
+                {   // in the new selenium there is a number of commands that Selenium doesn't support including linkText 
+                    if (Converted_Script.ScriptSteps[i].command == "click" | Converted_Script.ScriptSteps[i].command == "select" | Converted_Script.ScriptSteps[i].command == "type" | | Converted_Script.ScriptSteps[i].command == "sendKeys")
                     {
                         if (Converted_Script.ScriptSteps[i].target.Contains("linkText") == true)
                             Converted_Script.ScriptSteps[i].target = Converted_Script.ScriptSteps[i].target.Replace("linkText", "link");
@@ -197,6 +211,8 @@ namespace WebApplication1
                         // <tr>
                         writer.RenderBeginTag(HtmlTextWriterTag.Td);
                         // <td>
+                        // The New selenium automaically waits for elements before pressing them in this part any action item "click / select / type / sendKeys will add a wait for element 
+                        // to the HTML file before adding the command itself 
                         writer.Write("waitForElementPresent");
                         writer.RenderEndTag();
                         // </td>
@@ -286,7 +302,11 @@ namespace WebApplication1
             System.IO.File.WriteAllText(exportPath, stringwriter.ToString());
             StatusLabel.Text = "Convert status: Scenario Converted!";
             DownLoad(exportPath);
-
+            // by end of this fucntion a file will be already created that will have all the commands parsed from the .side file in the new html file 
+            // there is a small possibility that the resulted html script will not working immediately when uploaded into the portal and that is because the recorded element may be 
+            // accessible using xpath or the id or whatever locator 
+            // the script may need a minor tweaking by replacing the target with another target 
+            // there is a list of new Selenium IDE commands that are not supported by the old selenium IDE
         }
 
 
