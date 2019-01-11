@@ -66,17 +66,17 @@ namespace WebApplication1
 
             dt.Columns.Add(new DataColumn("Monitor Group ID", typeof(Int32)));
             dt.Columns.Add(new DataColumn("Monitor Group Name", typeof(string)));
-
+            dt.Columns.Add(new DataColumn("Selected", typeof(CheckBox)));
             
 
             for (int i = 0; i < results.Count; i++)
             {
                 TopMonitorGroup Temp = results[i];
                 dr = dt.NewRow();
-
+                CheckBox Datcheckbox = new CheckBox();
                 dr[0] = Temp.id ;
                 dr[1] = Temp.name;
-             
+                dr[2] = Datcheckbox.Enabled;
 
                 dt.Rows.Add(dr);
             }

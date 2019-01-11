@@ -26,7 +26,7 @@ namespace WebApplication1
                 {
 
                     int fileSize = FileUploadControl.PostedFile.ContentLength;
-                    if (fileSize > (5 * 1024))
+                    if (fileSize > ( 1024* 1024))
                     {
 
                         StatusLabel.Text = "Filesize of image is too large. Maximum file size permitted is 1 MB";
@@ -85,6 +85,7 @@ namespace WebApplication1
             public string target;
             public string value;
             public String[][] targets;
+            public string comment;
         }
 
         public class Script
@@ -123,7 +124,7 @@ namespace WebApplication1
                         command = result.Tests[0].commands[i].command,
                         target = result.Tests[0].commands[i].target,
                         value = result.Tests[0].commands[i].value,
-                        comment = " "
+                        comment = result.Tests[0].commands[i].comment
                     };
                     if (TempScript.target.Contains("linkText"))
                         TempScript.target = result.Tests[0].commands[3].targets[1][0];
@@ -188,6 +189,38 @@ namespace WebApplication1
                 string body = stringwriter.ToString();
                 for (int i = 0; i < Converted_Script.ScriptSteps.Count; i++)
                 {
+
+                    if (Converted_Script.ScriptSteps[i].command == "")
+                    {
+                        if (Converted_Script.ScriptSteps[i].comment == " ")
+                            continue;
+                        writer.RenderBeginTag(HtmlTextWriterTag.Tr);
+                        // <tr>
+                        writer.RenderBeginTag(HtmlTextWriterTag.Td);
+                        // <td>
+                        writer.Write("echo");
+                        writer.RenderEndTag();
+                        // </td>
+                        writer.RenderBeginTag(HtmlTextWriterTag.Td);
+                        // <td>
+                        writer.Write(Converted_Script.ScriptSteps[i].comment);
+                        writer.RenderEndTag();
+                        // </td>
+                        writer.RenderBeginTag(HtmlTextWriterTag.Td);
+                        // <td>
+                        writer.Write(Converted_Script.ScriptSteps[i].comment);
+                        writer.RenderEndTag();
+                        // </td>
+                        writer.RenderBeginTag(HtmlTextWriterTag.Td);
+                        // <td>
+                        writer.Write(Converted_Script.ScriptSteps[i].comment);
+                        writer.RenderEndTag();
+                        // </td>
+                        writer.RenderEndTag();
+                        // </tr>
+                        continue;
+                    }
+
                     if (Converted_Script.ScriptSteps[i].command == "click" | Converted_Script.ScriptSteps[i].command == "select")
                     {
                         if (Converted_Script.ScriptSteps[i].target.Contains("linkText") == true)
