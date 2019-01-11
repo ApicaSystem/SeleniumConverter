@@ -37,7 +37,7 @@ namespace WebApplication1
 
         public void PostData(string groupID)
         {
-            var httpWebRequest = (HttpWebRequest)WebRequest.Create("https://api-wpm.apicasystem.com/v3/groups/" + groupID + "/users?auth_ticket={Auth_Ticket});
+            var httpWebRequest = (HttpWebRequest)WebRequest.Create("https://api-wpm.apicasystem.com/v3/groups/" + groupID + "/users?auth_ticket={Auth_Ticket}");
             httpWebRequest.ContentType = "application/json";
             httpWebRequest.Method = "POST";
 
