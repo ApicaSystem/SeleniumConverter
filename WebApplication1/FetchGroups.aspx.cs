@@ -37,7 +37,7 @@ namespace WebApplication1
 
         public void PostData(string groupID)
         {
-            var httpWebRequest = (HttpWebRequest)WebRequest.Create("https://api-wpm.apicasystem.com/v3/groups/" + groupID + "/users?auth_ticket=EE0975AC-B42E-41A8-BF6E-CC650D7F6EA6");
+            var httpWebRequest = (HttpWebRequest)WebRequest.Create("https://api-wpm.apicasystem.com/v3/groups/" + groupID + "/users?auth_ticket={Auth_Ticket});
             httpWebRequest.ContentType = "application/json";
             httpWebRequest.Method = "POST";
 
@@ -95,7 +95,7 @@ namespace WebApplication1
         public List<TopMonitorGroup> UserAssignedTopMonitorGroup()
         {
             string html = string.Empty;
-            string url = @"https://api-wpm.apicasystem.com/v3/groups?auth_ticket=EE0975AC-B42E-41A8-BF6E-CC650D7F6EA6";
+            string url = @"https://api-wpm.apicasystem.com/v3/groups?auth_ticket={Auth_Ticket}";
 
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
 

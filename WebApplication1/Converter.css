@@ -1,0 +1,28 @@
+body {
+    text-align: center;
+}
+.jumbotron-fluid {
+    margin-top: 30px;
+    color: black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+    margin-top: 50px;
+    text-align: center;
+
+}
+
+h2 {
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+
+}
+img {
+    width: 40em;
+}
+.button{
+    margin: 10px;
+}
